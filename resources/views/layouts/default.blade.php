@@ -15,5 +15,7 @@
         @include('layouts._footer')
       </div>
     </div>
+
+    <script src="/weibo/public/js/app.js"></script>
   </body>
 </html>
