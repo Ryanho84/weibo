@@ -30,7 +30,7 @@ class SessionController extends Controller
         }
     }
 
-    public function destory()
+    public function destroy()
     {
         Auth::logout();
         session()->flash('success', '您已经成功退出！');
