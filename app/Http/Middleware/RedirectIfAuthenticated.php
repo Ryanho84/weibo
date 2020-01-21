@@ -22,7 +22,8 @@ class RedirectIfAuthenticated
             session()->flash('info', '您已登录，无需再次操作。');
             return redirect('/');
         }
-
-        //return $next($request);
+        
+        #非常重要，否则会出现Trying to get property of non-object的错误
+        return $next($request);
     }
 }
